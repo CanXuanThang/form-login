@@ -143,7 +143,8 @@ function SignUpForm(props: Props) {
         />
         <span className="text-danger mt-2 d-block " style={{ fontSize: '14px' }}>
           {errors.repeatPassword?.type === 'required' && <FormattedMessage id="passwordRequire" />}
-          {errors.repeatPassword?.type === 'validate' && <FormattedMessage id="matchPasswordInvalid" />}
+          {errors.repeatPassword?.type === 'validate' ||
+            (!passwordMatch && <FormattedMessage id="matchPasswordInvalid" />)}
         </span>
       </div>
       <div className="d-flex flex-column">
