@@ -84,7 +84,7 @@ function SignUpForm(props: Props) {
       className="row g-3 needs-validation"
       style={{ display: 'flex', flexDirection: 'column' }}
     >
-      <div onClick={changeLang} className="border d-flex justify-content-center">
+      <div onClick={changeLang} className="border d-flex justify-content-center" style={{ cursor: 'pointer' }}>
         Transalate
       </div>
       {!!errorMessage && (
