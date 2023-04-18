@@ -65,9 +65,9 @@ export default function LoginFormV2(props: Props) {
         )}
       />
       <div className="row justify-content-md-center" style={{ margin: '16px 0' }}>
-        <div className="col-md-auto">
+        <div className="col-md-auto d-flex">
           <button
-            className="btn btn-primary"
+            className="btn btn-primary me-3"
             type="submit"
             style={{ minWidth: '160px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             disabled={loading}

@@ -16,6 +16,7 @@ import { ROUTES } from '../../../configs/routes';
 import { replace } from 'connected-react-router';
 import { getErrorMessageResponse } from '../../../utils';
 import LoginFormV2 from '../components/LoginFormV2';
+import { FormattedMessage } from 'react-intl';
 
 const LoginPage = () => {
   const dispatch = useDispatch<ThunkDispatch<AppState, null, Action<string>>>();
@@ -60,6 +61,9 @@ const LoginPage = () => {
 
       {/* <LoginForm onLogin={onLogin} loading={loading} errorMessage={errorMessage} /> */}
       <LoginFormV2 onLogin={onLogin} loading={loading} errorMessage={errorMessage} />
+      <a href="/sign-up">
+        <FormattedMessage id="register" />
+      </a>
     </div>
   );
 };

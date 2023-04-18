@@ -5,7 +5,7 @@ import enMessages from '../en.json';
 import viMessages from '../vi.json';
 
 function getMessages(locale: string): any {
-  if (locale.startsWith('vi')) {
+  if (locale.startsWith('en')) {
     return viMessages;
   }
   return enMessages;
